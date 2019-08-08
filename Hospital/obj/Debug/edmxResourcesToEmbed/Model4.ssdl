@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Database1Model3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Details">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PatientDeasis" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BloodTest" Type="varchar" MaxLength="20" />
+    <Property Name="UrinTest" Type="varchar" MaxLength="20" />
+    <Property Name="OtherTest1" Type="varchar" MaxLength="20" />
+    <Property Name="OtherTest2" Type="varchar" MaxLength="20" />
+    <Property Name="OtherTest3" Type="varchar" MaxLength="20" />
+    <Property Name="PatientRoomNumber" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AppointedDoctor" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="AdmitDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Doctor Info">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Doctor Name" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Speacalist" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Duty time" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Phone Number" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Salary" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="login">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Patient Info">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Disease" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Age" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Database1Model3StoreContainer">
+    <EntitySet Name="Details" EntityType="Self.Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Doctor Info" EntityType="Self.Doctor Info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="login" EntityType="Self.login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Patient Info" EntityType="Self.Patient Info" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

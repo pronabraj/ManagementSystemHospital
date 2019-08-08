@@ -1,0 +1,16 @@
+﻿@model Hospital.Models.Class1
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <table>
+        <tr>
+            <td>File:</td>
+            <td><input type="file" name="Files" id="Files" multiple /></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><input type="submit" name="submit" value="Upload" /></td>
+        </tr>
+    </table>
+}

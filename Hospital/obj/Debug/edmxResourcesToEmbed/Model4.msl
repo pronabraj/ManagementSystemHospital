@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1Model3StoreContainer" CdmEntityContainer="Database1Entities3">
+    <EntitySetMapping Name="Details">
+      <EntityTypeMapping TypeName="Database1Model3.Detail">
+        <MappingFragment StoreEntitySet="Details">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PatientDeasis" ColumnName="PatientDeasis" />
+          <ScalarProperty Name="BloodTest" ColumnName="BloodTest" />
+          <ScalarProperty Name="UrinTest" ColumnName="UrinTest" />
+          <ScalarProperty Name="OtherTest1" ColumnName="OtherTest1" />
+          <ScalarProperty Name="OtherTest2" ColumnName="OtherTest2" />
+          <ScalarProperty Name="OtherTest3" ColumnName="OtherTest3" />
+          <ScalarProperty Name="PatientRoomNumber" ColumnName="PatientRoomNumber" />
+          <ScalarProperty Name="AppointedDoctor" ColumnName="AppointedDoctor" />
+          <ScalarProperty Name="AdmitDate" ColumnName="AdmitDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doctor_Infoes">
+      <EntityTypeMapping TypeName="Database1Model3.Doctor_Info">
+        <MappingFragment StoreEntitySet="Doctor Info">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Doctor_Name" ColumnName="Doctor Name" />
+          <ScalarProperty Name="Speacalist" ColumnName="Speacalist" />
+          <ScalarProperty Name="Duty_time" ColumnName="Duty time" />
+          <ScalarProperty Name="Phone_Number" ColumnName="Phone Number" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logins">
+      <EntityTypeMapping TypeName="Database1Model3.login">
+        <MappingFragment StoreEntitySet="login">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patient_Infoes">
+      <EntityTypeMapping TypeName="Database1Model3.Patient_Info">
+        <MappingFragment StoreEntitySet="Patient Info">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Disease" ColumnName="Disease" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

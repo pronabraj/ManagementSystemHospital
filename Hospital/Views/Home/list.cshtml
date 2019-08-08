@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Hospital.Detail>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PatientDeasis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BloodTest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UrinTest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherTest1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherTest2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherTest3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PatientRoomNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppointedDoctor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdmitDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PatientDeasis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BloodTest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrinTest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherTest1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherTest2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherTest3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PatientRoomNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppointedDoctor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdmitDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
